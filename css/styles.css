@@ -92,7 +92,7 @@ img {
 
     font-family: var(--main-font);    
     font-weight: 500;
-    font-size: 14;
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
@@ -124,7 +124,7 @@ img {
 .hero {
     background-color: var(--hero-background-color);
     text-align: center;
-    padding: 200px;
+    padding: 200px 0px;
 }
 .hero-button {
     display: inline-block;
@@ -179,18 +179,17 @@ img {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
-    margin-left: 24px;
     margin-top: 4px;
 }
-.our-works-item{
+.our-works-item:not(:nth-child(-n+3)){
     margin-top: 30px;
 }
-.our-works-name{
-    margin-left: 24px;
-}
+
 .our-works-wrap{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right:24px;
     border: 1px solid #eeeeee;
     border-top: none;
 }
@@ -223,7 +222,7 @@ img {
 .secondary-navigation-list{
     display: flex;
     justify-content: center;
-    margin-bottom:20px;
+    margin-bottom:50px;
 }
 .secondary-navigation-list-button {
     font-family: var(--main-font);
@@ -304,9 +303,13 @@ img {
     clip: rect(0 0 0 0); 
     overflow: hidden; 
     }
+.work-processes{
+    padding-top:0px;
+}
 .working-process{
     display: flex;
     justify-content: space-between;
+    padding-top: 0px;
 }
 /*---------------------------------------- MAIN ----------------------------------------*/
 /* ---------------------------------------- FOOTER ----------------------------------------*/
@@ -323,6 +326,12 @@ img {
     padding-top:60px;
     padding-bottom: 60px;
 }
+.footer-address{
+    margin-top: 20px;
+}
+.footer-address-item:not(:last-child){
+    margin-bottom:9px;
+}
 .footer-contact-info {
     font-family: var(--main-font);
     font-style: normal;  
@@ -330,9 +339,9 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+   
 }
 .footer-logo {
-    padding-top: 50px;
     font-family: 'Raleway';    
     font-weight: 700;
     font-size: 26px;
